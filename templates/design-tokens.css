@@ -1,0 +1,126 @@
+/* ============================================================
+   Design tokens — generados desde brand.json
+   Marca: [NOMBRE]   ·   Actualizado: [FECHA]
+
+   REGLA: el CSS del proyecto nunca lleva un HEX literal.
+   Siempre var(--color-*). Así un cambio de marca es una línea.
+   ============================================================ */
+
+:root {
+  /* ---- Color: roles de marca ---- */
+  --color-base: #060910;        /* texto principal, fondos oscuros */
+  --color-primary: #6938EF;     /* acciones, CTAs, acento de marca */
+  --color-secondary: #899CFF;   /* hover, estados secundarios */
+  --color-accent: #42D9C8;      /* destacados, iconografía */
+  --color-surface: #C8E8FF;     /* superficies y fondos suaves */
+
+  /* ---- Color: derivados (calculados, no inventados) ---- */
+  --color-primary-hover: color-mix(in srgb, var(--color-primary) 88%, black);
+  --color-primary-soft: color-mix(in srgb, var(--color-primary) 12%, white);
+
+  /* ---- Color: neutros ---- */
+  --color-bg: #ffffff;
+  --color-fg: var(--color-base);
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+
+  /* ---- Tipografía ---- */
+  --font-display: 'Manrope', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+
+  --weight-display: 800;
+  --weight-heading: 700;
+  --weight-body: 400;
+  --weight-emphasis: 600;
+
+  /* ---- Escala tipográfica ---- */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+
+  --leading-tight: 1.15;
+  --leading-normal: 1.6;
+
+  /* ---- Espaciado (escala de 4px) ---- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+  /* ---- Radios y sombras ---- */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 2px rgb(6 9 16 / 0.06);
+  --shadow-md: 0 4px 12px rgb(6 9 16 / 0.08);
+  --shadow-lg: 0 12px 32px rgb(6 9 16 / 0.12);
+
+  /* ---- Layout ---- */
+  --container: 1120px;
+}
+
+/* ============================================================
+   Modo oscuro
+   Solo se redefine lo que cambia. La paleta clara vive arriba,
+   en :root sin condición — nunca definas un color únicamente
+   dentro de un media query.
+   ============================================================ */
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: var(--color-base);
+    --color-fg: #f5f6f8;
+    --color-muted: #9aa1ad;
+    --color-border: #1e2530;
+    --color-surface: #111823;
+  }
+}
+
+:root[data-theme="dark"] {
+  --color-bg: var(--color-base);
+  --color-fg: #f5f6f8;
+  --color-muted: #9aa1ad;
+  --color-border: #1e2530;
+  --color-surface: #111823;
+}
+
+/* ============================================================
+   Aplicación base
+   ============================================================ */
+
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-body);
+  font-weight: var(--weight-body);
+  line-height: var(--leading-normal);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-display);
+  line-height: var(--leading-tight);
+}
+
+/* ============================================================
+   Verificación de contraste (WCAG AA)
+   Comprobar antes de dar por buena la paleta:
+   - Texto normal sobre fondo:  ≥ 4.5:1
+   - Texto grande (≥24px):      ≥ 3:1
+   - Elementos de interfaz:     ≥ 3:1
+   Si --color-primary no pasa sobre blanco, necesitas
+   una variante oscura para texto y enlaces.
+   ============================================================ */

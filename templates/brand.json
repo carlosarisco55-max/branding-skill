@@ -1,0 +1,171 @@
+{
+  "$schema": "branding-skill/v1",
+  "_comment": "Plantilla del contrato de marca. Claves en inglés (las consumen ui-ux-pro-max, frontend-design, ui-styling y CSS); valores en el idioma de la marca. Usa null explícito para lo que aún no está decidido — NUNCA inventes un valor plausible.",
+
+  "name": "",
+  "tagline": "",
+  "language": "es",
+  "stage": "prelaunch",
+  "updated": "",
+
+  "strategy": {
+    "mission": "",
+    "vision": "",
+    "values": [
+      { "name": "", "tradeoff": "" }
+    ],
+    "valueProposition": "",
+    "positioning": "",
+    "whatWeAreNot": [],
+    "elevatorPitch": ""
+  },
+
+  "archetype": {
+    "primary": null,
+    "secondary": null,
+    "rationale": "",
+    "ratio": "80/20"
+  },
+
+  "voice": {
+    "tone": [],
+    "person": "tú",
+    "emoji": "",
+    "keyMessages": [
+      { "message": "", "reasonToBelieve": "" }
+    ],
+    "allowedWords": [],
+    "bannedWords": [
+      "emocionante",
+      "aprendizaje",
+      "memorable",
+      "revolucionario",
+      "imprescindible"
+    ],
+    "bannedPatterns": [
+      "no solo... sino que",
+      "desde... hasta",
+      "Titulares Con Mayúscula En Cada Palabra"
+    ],
+    "slogan": "",
+    "rejectedSlogans": []
+  },
+
+  "visual": {
+    "colors": {
+      "base": null,
+      "primary": null,
+      "secondary": null,
+      "accent": null,
+      "surface": null,
+      "neutrals": []
+    },
+    "typography": {
+      "display": { "family": null, "weights": [], "source": "" },
+      "body": { "family": null, "weights": [], "source": "" },
+      "fallback": "-apple-system, BlinkMacSystemFont, system-ui, sans-serif"
+    },
+    "style": [],
+    "keyVisual": "",
+    "photography": "",
+    "doNot": []
+  },
+
+  "logo": {
+    "available": false,
+    "files": {
+      "primary": "",
+      "dark": "",
+      "vertical": "",
+      "isotype": "",
+      "favicon": ""
+    },
+    "minSize": "",
+    "clearSpace": "",
+    "forbiddenUses": []
+  },
+
+  "audience": {
+    "target": "",
+    "primaryPersona": {
+      "name": "",
+      "age": "",
+      "role": "",
+      "bio": "",
+      "pains": [],
+      "goals": [],
+      "buyingMotives": [],
+      "channels": [],
+      "quote": ""
+    },
+    "secondaryPersonas": []
+  },
+
+  "content": {
+    "pillars": [
+      {
+        "name": "",
+        "subtopics": [],
+        "_rule": "NUNCA describe el producto. Si al quitar el producto de la frase el pilar pierde sentido, es una categoría comercial, no un pilar."
+      }
+    ],
+    "channels": [
+      {
+        "name": "",
+        "type": "owned",
+        "persona": "",
+        "objective": "",
+        "stage": "atraer",
+        "pillars": [],
+        "formats": [],
+        "tone": "",
+        "frequency": "",
+        "kpi": ""
+      }
+    ]
+  },
+
+  "experience": {
+    "brandPromise": "",
+    "touchpoints": [
+      {
+        "name": "",
+        "stage": "",
+        "emotion": "",
+        "cta": "",
+        "friction": ""
+      }
+    ]
+  },
+
+  "aiDirectives": {
+    "stylePrompt": "",
+    "negativePrompt": "bad anatomy, extra fingers, watermark, signature, texto ilegible",
+    "aspectRatios": {
+      "blog": "16:9",
+      "social": "1:1",
+      "stories": "9:16",
+      "banner": "3:1"
+    },
+    "imagePromptTemplate": {
+      "prompt": "",
+      "details": {
+        "subject": {},
+        "action": "",
+        "location": {},
+        "mood": ""
+      },
+      "style": {
+        "art_style": "",
+        "lighting": "",
+        "color_palette": "",
+        "camera": { "perspective": "", "focus": "" }
+      },
+      "generation": { "size": "1024x1024", "n": 1, "format": "png" }
+    }
+  },
+
+  "pending": [
+    "Lista aquí lo que falta por decidir. Un pendiente declarado vale más que un valor inventado."
+  ]
+}
