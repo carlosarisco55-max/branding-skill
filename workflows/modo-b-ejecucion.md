@@ -56,6 +56,11 @@ Recorre los 4 ejes y lista qué falta. Los huecos habituales:
 
 Para cada hueco: pregunta o marca explícitamente como **pendiente** en el entregable. Un `"archetype": null` honesto vale más que uno inventado.
 
+**Logo — tratar los dos casos con el mismo nivel de cuidado, ninguno se queda como referencia suelta:**
+- **Si el proyecto ya tiene logo** (en `assets/`, `public/`, o aportado por el usuario): **cópialo tal cual** a `brand/logo/`. Es el logo real de la marca — no se rediseña, se importa completo (todas las versiones que existan: claro, oscuro, favicon...).
+- **Si no tiene y la verificación externa confirma que no existe en ningún sitio**: **genéralo** — ver [checklist de validación, "Si aún no hay logo"](../checklists/validacion-logo.md#si-aún-no-hay-logo-generarlo-no-solo-dejarlo-pendiente).
+- **En ambos casos**: monta una vista previa (HTML, fondo claro/oscuro, tamaño normal y 16-32px) y tómale una captura de pantalla real antes de darlo por cerrado — no asumas que se ve bien solo porque el archivo existe.
+
 ### Paso 4: generar entregables
 `BRAND.md` → `brand.json` → `design-tokens.css` → bloque de prompt externo.
 Plantillas en [`templates/`](../templates/).

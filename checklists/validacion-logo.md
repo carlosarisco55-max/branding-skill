@@ -67,6 +67,10 @@ Se evaluó conectar una API de generación de imágenes (Gemini, Leonardo, gener
 6. **Verifica visualmente de verdad** antes de darlo por bueno: renderiza los SVG en una página HTML simple y tómale una captura de pantalla (navegador/Playwright) — no asumas que el código se ve bien solo porque es válido. Prueba explícitamente el tamaño mínimo (16px).
 7. Pasa la tabla de las 8 preguntas de arriba contra el resultado real, no contra la intención.
 
+### Si ya existe un logo, pide siempre el archivo fuente
+
+Al recibir un logo ya hecho (por quien lo diseñó, un compañero, otro equipo), pide **el archivo de diseño original** (Figma, Illustrator, SVG, .ai, .eps) además de la imagen exportada — no solo un JPEG/PNG. Reconstruir un logo a mano a partir de una foto es lento, impreciso y nunca es pixel-perfect (lección real: 4 iteraciones para acercarse a un logo del que solo había fotos, sin llegar a la fidelidad exacta). Pedir el archivo fuente en el momento evita ese trabajo por completo.
+
 ### Brief si se prefiere encargarlo a una persona diseñadora en vez de generarlo
 - Arquetipo principal y secundario
 - Emoción objetivo

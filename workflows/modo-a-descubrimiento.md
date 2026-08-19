@@ -104,7 +104,12 @@ Aquí, si el usuario no sabe qué quiere visualmente, **no preguntes "¿qué col
 
 **Salida**: paleta con roles y HEX, tipografías con nombre exacto/pesos/fuente/fallback, estilo visual en 3–5 adjetivos, key visual, lista `doNot`.
 
-Si hay logo, pásale el [checklist de validación](../checklists/validacion-logo.md). **Si no lo hay y la FASE 6bis confirma que no existe en ningún sitio, genéralo** — no lo dejes solo como pendiente. Ver ["Si aún no hay logo: generarlo"](../checklists/validacion-logo.md#si-aún-no-hay-logo-generarlo-no-solo-dejarlo-pendiente) en el mismo checklist.
+**Logo — tratar igual los dos casos, no dejar ninguno como referencia suelta:**
+
+- **Si NO hay logo** y la FASE 6bis confirma que no existe en ningún sitio, **genéralo** — no lo dejes solo como pendiente. Ver ["Si aún no hay logo: generarlo"](../checklists/validacion-logo.md#si-aún-no-hay-logo-generarlo-no-solo-dejarlo-pendiente).
+- **Si SÍ hay logo** (archivo propio del cliente, o encontrado en la verificación externa), **cópialo tal cual** a `brand/logo/` dentro del proyecto — no lo dejes en su ubicación original ni solo enlazado por ruta externa. Es el logo real de la marca, no se rediseña ni se toca; se importa.
+
+**En ambos casos**, antes de dar el logo por cerrado: **renderízalo y compruébalo de verdad**, no lo des por bueno solo porque el archivo existe. Monta una vista previa simple (HTML con el SVG/PNG sobre fondo claro y oscuro, a tamaño normal y a 16-32px) y tómale una captura de pantalla real (navegador/Playwright) antes de continuar. Pasa después el [checklist de validación](../checklists/validacion-logo.md).
 
 ---
 
