@@ -127,7 +127,7 @@ Si hay logo, pásale el [checklist de validación](../checklists/validacion-logo
 
 ## FASE 6bis — Verificación externa (obligatoria, antes de cerrar)
 
-No cierres el brand book solo con lo que el usuario recuerda o lo que ya hay en el repo. Antes de generar los entregables, **busca de verdad**: `WebSearch`/`agent-reach` para una comprobación puntual (¿existe LinkedIn? ¿existe web?) es suficiente y no gasta créditos; usa Firecrawl solo si hace falta scraping real de una página encontrada (extraer contenido, comparar varias fuentes a fondo).
+No cierres el brand book solo con lo que el usuario recuerda o lo que ya hay en el repo. Antes de generar los entregables, **busca de verdad** — y antes de hacerlo, **pregunta al usuario si prefiere Firecrawl o `agent-reach`**, dando tu opinión honesta de cuál encaja mejor para este caso (ver [[feedback_cuando_usar_firecrawl]]). No decidas la herramienta en silencio.
 
 1. **¿Existe ya un logo en algún sitio?** (web antigua, redes, directorios, registro mercantil, Google Business) — si lo encuentras, es la fuente de verdad, no se rediseña sin más. Si no aparece en ningún sitio tras buscar, **decláralo confirmado, no asumido**: "verificado por scraping, no existe logo publicado en ningún sitio" es distinto de "no encontré logo" sin haber buscado.
 2. **¿Qué canales tiene ya la marca?** (LinkedIn, redes, web, listados locales) — el mapa de canales de FASE 6 se construye distinto según si ya existe presencia (auditar y ampliar) o no existe ninguna (proponer lanzamiento desde cero). No fabriques un mapa de canales "existentes" sin haberlo comprobado.
