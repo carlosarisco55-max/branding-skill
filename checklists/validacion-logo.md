@@ -43,11 +43,31 @@ logo-mono.svg               blanco y negro
 
 ---
 
-## Si aún no hay logo
+## Si aún no hay logo: generarlo, no solo dejarlo pendiente
 
-**No es bloqueante.** El logo es el último paso de la identidad visual, no el primero. Se puede cerrar el brand book completo con el logo pendiente, y de hecho es mejor así: el brief para diseñarlo sale de tener el arquetipo, la paleta, la tipografía y el estilo ya decididos.
+**Regla**: si la [verificación externa (FASE 6bis)](../workflows/modo-a-descubrimiento.md#fase-6bis--verificación-externa-obligatoria-antes-de-cerrar) confirma que no existe ningún logo previo en ningún sitio, **no te limites a documentarlo como pendiente — genera uno real**. Un brand book con "logo: pendiente" no es una identidad completa.
 
-Brief mínimo para encargarlo (o generarlo):
+### Por qué SVG generado por código, no imagen de IA
+
+Se evaluó conectar una API de generación de imágenes (Gemini, Leonardo, generadores de logo con IA) y se descartó como método por defecto:
+
+- Los generadores de imagen producen **raster con artefactos**, no vectores limpios — fallan los checks "funciona en blanco y negro" y "se entiende en pequeño" de esta misma tabla
+- Herramientas gratuitas de logo con SVG real: **Logolivery estaba anunciado como gratis+SVG pero la empresa está liquidada** (verificar antes de recomendar, cambia con el tiempo); SVGMaker tiene API pero créditos limitados; Kleap/Logo.com son gratis pero sin API, no automatizables desde una skill
+- Generar el SVG **directamente como código**, a partir de los datos ya decididos (`archetype`, `visual.colors`, `visual.style`), es gratis, ilimitado, reproducible, y cumple mejor el checklist que cualquiera de las alternativas de arriba
+
+*(Antes de usar cualquiera de las opciones de arriba, vuelve a verificar que siguen existiendo — este tipo de herramientas cambia rápido. Ver [[feedback_verificar_a_fondo_siempre]].)*
+
+### Cómo generarlo (método por defecto)
+
+1. **Deriva el concepto de un mensaje clave o de la propuesta de valor**, no de un icono genérico del sector. Ej.: dos líneas de negocio → dos formas geométricas superpuestas; "transparencia" → formas con opacidad/superposición visible; "velocidad" → diagonales o flechas.
+2. **Traduce el arquetipo a geometría**: Gobernante/Sabio → formas simétricas, ángulos rectos, orden; Explorador/Rebelde → asimetría, diagonales; Cuidador/Amante → esquinas redondeadas, superposición cálida; Bufón/Creador → formas más libres, menos simétricas.
+3. **Usa los HEX exactos de `visual.colors`**, nunca aproximaciones.
+4. Construye como SVG con `viewBox`, formas simples (`rect`, `circle`, `path`) — evita degradados complejos o efectos que no escalen bien a 16px.
+5. **Produce el set completo**: isotipo (fondo claro), isotipo (fondo oscuro o mono), horizontal con wordmark (claro y oscuro), favicon a 32px.
+6. **Verifica visualmente de verdad** antes de darlo por bueno: renderiza los SVG en una página HTML simple y tómale una captura de pantalla (navegador/Playwright) — no asumas que el código se ve bien solo porque es válido. Prueba explícitamente el tamaño mínimo (16px).
+7. Pasa la tabla de las 8 preguntas de arriba contra el resultado real, no contra la intención.
+
+### Brief si se prefiere encargarlo a una persona diseñadora en vez de generarlo
 - Arquetipo principal y secundario
 - Emoción objetivo
 - Paleta con HEX
