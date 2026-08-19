@@ -10,6 +10,7 @@ Para cuando la marca **no sabe todavía qué quiere**: no hay identidad definida
 4. **Registra lo decidido al cerrar cada eje**, para no revisitarlo.
 5. **No inventes.** Si falta un dato que solo el usuario conoce (público real, precio, competencia), pregúntalo.
 6. **Sé crítico.** Si una respuesta es genérica o contradice algo anterior, dilo. La IA que no contradice produce marcas intercambiables.
+7. **Verifica la presencia externa real, no la asumas.** Antes de cerrar el brand book, busca de verdad (Firecrawl u otra herramienta de scraping/búsqueda web) si la marca tiene logo, web, redes o registro público ya existente — no des por hecho que "no hay nada" ni te fíes solo de lo que el usuario recuerda. Documenta lo encontrado (o la ausencia confirmada) con fuentes, no como suposición. Ver el paso final de este flujo.
 
 ---
 
@@ -121,6 +122,18 @@ Si hay logo, pásale el [checklist de validación](../checklists/validacion-logo
 - ¿Algún pilar habla del producto? → **rechazar y reformular** (ver regla en ch07)
 - ¿Todos los canales son Owned? → falta Paid y Earned
 - ¿Todos los canales están en "atraer"? → falta embudo
+
+---
+
+## FASE 6bis — Verificación externa (obligatoria, antes de cerrar)
+
+No cierres el brand book solo con lo que el usuario recuerda o lo que ya hay en el repo. Antes de generar los entregables, **busca de verdad** con Firecrawl (`firecrawl search` / `firecrawl scrape`) o la herramienta de scraping disponible:
+
+1. **¿Existe ya un logo en algún sitio?** (web antigua, redes, directorios, registro mercantil, Google Business) — si lo encuentras, es la fuente de verdad, no se rediseña sin más. Si no aparece en ningún sitio tras buscar, **decláralo confirmado, no asumido**: "verificado por scraping, no existe logo publicado en ningún sitio" es distinto de "no encontré logo" sin haber buscado.
+2. **¿Qué canales tiene ya la marca?** (LinkedIn, redes, web, listados locales) — el mapa de canales de FASE 6 se construye distinto según si ya existe presencia (auditar y ampliar) o no existe ninguna (proponer lanzamiento desde cero). No fabriques un mapa de canales "existentes" sin haberlo comprobado.
+3. **¿Hay datos que contradicen lo que el usuario dio por hecho?** (dirección, nombre legal, redes con nombre parecido pero de otra empresa) — señala cualquier discrepancia real encontrada, no la resuelvas por tu cuenta ni la ignores.
+
+Documenta lo que encuentres (o la ausencia confirmada) en una sección propia del `BRAND.md`, con fuentes citadas y fecha de la búsqueda — igual que cualquier otro hallazgo verificado en esta skill. Ver [[feedback_verificar_a_fondo_siempre]] en la memoria: esto no es opcional ni específico de un caso, es la forma de trabajar por defecto.
 
 ---
 

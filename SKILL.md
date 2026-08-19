@@ -80,7 +80,7 @@ Plantillas en [`templates/`](templates/). El `brand.json` usa claves en inglés 
 
 ---
 
-## Cinco reglas vinculantes
+## Seis reglas vinculantes
 
 Estas no son recomendaciones. Si el trabajo las incumple, hay que corregirlo antes de continuar.
 
@@ -93,6 +93,8 @@ Estas no son recomendaciones. Si el trabajo las incumple, hay que corregirlo ant
 4. **No se inventan datos de marca.** Ni testimonios, ni cifras de clientes, ni social proof, ni funcionalidades que no existen. Si la marca es pre-lanzamiento, se dice.
 
 5. **Toda decisión visual lleva su HEX y su nombre exacto de tipografía.** "Un azul corporativo" no es una decisión, es una intención. `#003366` sí lo es.
+
+6. **Verifica la presencia externa real antes de cerrar, no la asumas.** Antes de dar el brand book por terminado, busca de verdad (Firecrawl u otra herramienta de scraping/búsqueda) si la marca ya tiene logo, web, redes o registro público existente. "No hay nada" solo vale si lo has buscado — si no, es una suposición, no un hallazgo. Ver [FASE 6bis del Modo A](workflows/modo-a-descubrimiento.md#fase-6bis--verificación-externa-obligatoria-antes-de-cerrar).
 
 ---
 
